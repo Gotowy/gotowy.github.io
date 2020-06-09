@@ -1,0 +1,306 @@
+/* RESET */
+body,
+nav,
+main,
+footer,
+p,
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  background: url(img/pw_maze_black.png); /* Background pattern from Toptal Subtle Patterns */
+  font-family: "Poppins";
+  color: #fff;
+}
+
+.section {
+  min-height: calc(100vh - 80px);
+  padding: 40px;
+}
+
+.background {
+  background: url(img/bg.jpg); /*Photo by Samuel Bourke on Unsplash*/
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #111;
+  background-blend-mode: overlay;
+  color: transparent;
+}
+
+.bgTransform {
+  background-color: #333;
+  color: #fd5;
+  transition: background-color 2s ease-in,
+    color 1.5s cubic-bezier(0.86, -0.04, 0.8, 0.42);
+}
+
+.title1 {
+  font-size: 64px;
+  font-family: "Rancho";
+  -webkit-text-stroke: 1px #a70;
+}
+
+.title2 {
+  font-size: 36px;
+  font-family: "Rancho";
+  color: #fff;
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+  transition: opacity 2s cubic-bezier(1, -0.02, 0.6, -0.01);
+}
+
+.scrolled {
+  background: #bbbe;
+  padding-bottom: 7px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 7px;
+  background-color: #7779;
+  z-index: 2;
+  transition: background-color 2s ease-in,
+    color 1.5s cubic-bezier(0.86, -0.04, 0.8, 0.42);
+}
+
+.navmenu {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  color: #fff;
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 13px;
+  text-align: center;
+}
+
+.color {
+  color: #000;
+}
+
+.home {
+  font-family: "Rancho";
+  font-size: 28px;
+}
+
+.home:hover {
+  color: #222b;
+}
+
+.navmenu a {
+  width: calc(33% - 25px);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.navmenu a:hover {
+  background: #222b;
+  color: #fd5;
+  transition: all 0.2s ease-in-out;
+}
+
+.container {
+  background: url(img/pw_maze_black.png); /* Background pattern from Toptal Subtle Patterns */
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 36px;
+  text-align: center;
+  color: #db3;
+  transition: all 0.5s ease-out;
+}
+
+.transformH2 {
+  transform: translateY(-15px);
+}
+
+h3 {
+  margin-top: 0;
+  text-align: center;
+  border-bottom: solid #fff 2px;
+  font-size: 24px;
+}
+
+#about h3 {
+  border: none;
+}
+
+h4 {
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+}
+
+.aboutMe {
+  margin: 0 auto;
+  text-align: justify;
+  max-width: 910px;
+}
+
+#projects {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.stripe {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: #222;
+  z-index: -1;
+  transition: transform 2s ease-out;
+}
+
+.stripe1 {
+  transform: rotate(45deg) translateX(-155vw) translateY(-50vh);
+}
+
+.stripe2 {
+  transform: rotate(45deg) translateX(71vw) translateY(-50vh);
+}
+
+.transform1 {
+  transform: rotate(45deg) translateX(-115vw) translateY(-50vh);
+}
+
+.transform2 {
+  transform: rotate(45deg) translateX(111vw) translateY(-50vh);
+}
+
+.project {
+  padding: 50px;
+}
+
+.project header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.flex {
+  margin: 0 auto;
+  display: flex;
+  text-align: justify;
+  justify-content: space-evenly;
+}
+
+#about .flex {
+  max-width: 400px;
+  padding-left: 4vw;
+}
+
+.description {
+  margin-left: 50px;
+  width: 600px;
+}
+
+.description li {
+  list-style-type: disc;
+}
+
+.project img {
+  border-radius: 3px;
+}
+
+.btn {
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.pageBtn {
+  background: #db3;
+  color: #000;
+}
+
+.pageBtn:hover {
+  background: #fd5;
+}
+
+.gitBtn {
+  color: #db3;
+  border: 2px #db3 solid;
+}
+
+.gitBtn:hover {
+  color: #fd5;
+  border-color: #fd5;
+  background: #fff1;
+}
+
+.description a,
+#contact a,
+footer a {
+  color: #db3;
+  text-decoration: underline;
+}
+
+.description a:hover,
+#contact a:hover,
+footer a:hover {
+  color: #fd5;
+}
+
+#contact {
+  min-height: calc(100vh - 280px);
+  display: flex;
+  flex-direction: column;
+}
+
+#contact .details {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  align-self: stretch;
+}
+
+#contact i {
+  font-size: 32px;
+}
+
+footer {
+  height: 200px;
+  background-image: linear-gradient(transparent, #fff9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+footer div {
+  margin: auto auto;
+}
