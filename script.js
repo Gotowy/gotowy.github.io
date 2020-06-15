@@ -1,11 +1,8 @@
-/*URL WITHOUT ID OF A CHOSEN SECTION*/
-const url = () => {
-  console.log("pozdro");
-  history.replaceState(
-    "portfolio",
-    null,
-    "https://gotowy.github.io/portfolio/"
-  );
+const url = (id) => {
+  document.querySelector(id).scrollIntoView({
+    block: "start",
+    behavior: "smooth",
+  });
 };
 
 /* BACKGROUND INTERSECTING */

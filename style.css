@@ -83,7 +83,8 @@ nav {
   justify-content: space-around;
 }
 
-nav a {
+.home,
+.navBtn {
   color: #fff;
   font-size: 24px;
   padding: 10px;
@@ -104,12 +105,12 @@ nav a {
   color: #222b;
 }
 
-.navmenu a {
+.navBtn {
   width: calc(33% - 25px);
   transition: background-color 0.2s ease-in-out;
 }
 
-.navmenu a:hover {
+.navBtn:hover {
   background: #222b;
   color: #fd5;
   transition: all 0.2s ease-in-out;

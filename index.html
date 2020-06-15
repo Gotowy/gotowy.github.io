@@ -18,13 +18,11 @@
   <body id="start">
     <header>
       <nav>
-        <a href="#start" onclick="url()"
-          ><div class="home">Adam Rybak - Portfolio</div></a
-        >
+        <div class="home" onclick="url('#start')">Adam Rybak - Portfolio</div>
         <div class="navmenu">
-          <a href="#about" onclick="url()"><div>O mnie</div></a>
-          <a href="#projects" onclick="url()"><div>Projekty</div></a>
-          <a href="#contact" onclick="url()"><div>Kontakt</div></a>
+          <div class="navBtn" onclick="url('#about')">O mnie</div>
+          <div class="navBtn" onclick="url('#projects')">Projekty</div>
+          <div class="navBtn" onclick="url('#contact')">Kontakt</div>
         </div>
       </nav>
       <section class="background">
