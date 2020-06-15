@@ -1,3 +1,13 @@
+/*URL WITHOUT ID OF A CHOSEN SECTION*/
+const url = () => {
+  console.log("pozdro");
+  history.replaceState(
+    "portfolio",
+    null,
+    "https://gotowy.github.io/portfolio/"
+  );
+};
+
 /* BACKGROUND INTERSECTING */
 const bgOptions = {
   root: null,
@@ -51,7 +61,7 @@ h2Targets.forEach((h2Target) => h2Observer.observe(h2Target));
 
 const projectsOptions = {
   root: null,
-  rootMargin: "0px 0px -150px 0px",
+  rootMargin: "-50px 0px -150px 0px",
   treshold: 1.0,
 };
 

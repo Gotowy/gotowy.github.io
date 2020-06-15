@@ -16,7 +16,7 @@ body {
   color: #fff;
 }
 
-.section {
+section {
   min-height: calc(100vh - 80px);
   padding: 40px;
 }
@@ -36,7 +36,7 @@ body {
 .bgTransform {
   background-color: #333;
   color: #fd5;
-  transition: background-color 2s ease-in,
+  transition: background-color 2s ease-out,
     color 1.5s cubic-bezier(0.86, -0.04, 0.8, 0.42);
 }
 

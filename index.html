@@ -16,181 +16,193 @@
     <title>Portfolio</title>
   </head>
   <body id="start">
-    <nav>
-      <a href="#start"><div class="home">Adam Rybak - Portfolio</div></a>
-      <div class="navmenu">
-        <a href="#about"><div>O mnie</div></a>
-        <a href="#projects"><div>Projekty</div></a>
-        <a href="#contact"><div>Kontakt</div></a>
-      </div>
-    </nav>
-    <div class="background section">
-      <div class="title1">Adam Rybak</div>
-      <span class="title2">PORTFOLIO FRONT-END DEVELOPERA</span>
-    </div>
+    <header>
+      <nav>
+        <a href="#start" onclick="url()"
+          ><div class="home">Adam Rybak - Portfolio</div></a
+        >
+        <div class="navmenu">
+          <a href="#about" onclick="url()"><div>O mnie</div></a>
+          <a href="#projects" onclick="url()"><div>Projekty</div></a>
+          <a href="#contact" onclick="url()"><div>Kontakt</div></a>
+        </div>
+      </nav>
+      <section class="background">
+        <div class="title1">Adam Rybak</div>
+        <span class="title2">PORTFOLIO FRONT-END DEVELOPERA</span>
+      </section>
+    </header>
 
     <div class="container">
-      <div id="about" class="section">
-        <div class="wrapper">
-          <div class="aboutMe">
-            <h2>Kim jestem</h2>
-            <br />Jestem absolwentem studiów ekonomicznych, który postanowił
-            poszerzyć swoje kompetencje zawodowe, zgłębiając zupełnie nową
-            dziedzinę wiedzy. Naukę programowania zacząłem na własną rękę, pod
-            koniec 2018 roku. Jestem obecnie skupiony na poznawaniu technologii
-            związanych z pisaniem aplikacji webowych i front-endem. Kolejnymi,
-            większymi technologiami, których naukę planuję rozpocząć są:
-            Firebase/AWS oraz PWA/React Native. Pracując lubię podejmować
-            zróżnicowane zadania, z łatwością przyswajam nową wiedzę i
-            umiejętności, posługuję się swobodnie językiem angielskim oraz
-            dobrze odnajduję się w pracy z innymi ludźmi.
+      <main>
+        <section id="about">
+          <div class="wrapper">
+            <article class="aboutMe">
+              <h2>Kim jestem</h2>
+              <br />Jestem absolwentem studiów ekonomicznych, który postanowił
+              poszerzyć swoje kompetencje zawodowe, zgłębiając zupełnie nową
+              dziedzinę wiedzy. Naukę programowania zacząłem na własną rękę, pod
+              koniec 2018 roku. Jestem obecnie skupiony na poznawaniu
+              technologii związanych z pisaniem aplikacji webowych i
+              front-endem. Kolejnymi, większymi technologiami, których naukę
+              planuję rozpocząć są: Firebase/AWS oraz PWA/React Native. Pracując
+              lubię podejmować zróżnicowane zadania, z łatwością przyswajam nową
+              wiedzę i umiejętności, posługuję się swobodnie językiem angielskim
+              oraz dobrze odnajduję się w pracy z innymi ludźmi.
+            </article>
+            <br /><br /><br />
+
+            <article>
+              <h3>Potrafię pracować z:</h3>
+              <div class="flex">
+                <ul>
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>SCSS</li>
+                  <li>JavaScript</li>
+                  <li>React</li>
+                  <li>Redux</li>
+                </ul>
+                <ul>
+                  <li>VS Code</li>
+                  <li>Powershell</li>
+                  <li>Git / Github</li>
+                  <li>Chrome DevTools</li>
+                </ul>
+              </div>
+            </article>
           </div>
-          <br /><br /><br />
+        </section>
+        <section id="projects" class="section">
+          <div class="stripe stripe1"></div>
+          <div class="stripe stripe2"></div>
+          <h2>Moje projekty</h2>
+          <article class="project">
+            <h3>Pizzeria Raffaele</h3>
 
-          <h3>Potrafię pracować z:</h3>
-          <div class="flex">
-            <ul>
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li>SCSS</li>
-              <li>JavaScript</li>
-              <li>React</li>
-              <li>Redux</li>
-            </ul>
-            <ul>
-              <li>VS Code</li>
-              <li>Powershell</li>
-              <li>Git / Github</li>
-              <li>Chrome DevTools</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div id="projects" class="section">
-        <div class="stripe stripe1"></div>
-        <div class="stripe stripe2"></div>
-        <h2>Moje projekty</h2>
-        <div class="project">
-          <h3>Pizzeria Raffaele</h3>
-
-          <div class="flex">
-            <div class="interactive">
-              <div>
-                <a
-                  href="https://gotowy.github.io/pizzeria-raffaele/"
-                  target="_blank"
-                  ><img src="img/1.gif" alt="projekt1"
-                /></a>
-              </div>
-              <div class="buttons">
-                <a
-                  href="https://gotowy.github.io/pizzeria-raffaele/"
-                  target="_blank"
-                  ><div class="pageBtn btn">Zobacz stronę</div></a
-                >
-                <a
-                  href="https://github.com/gotowy/pizzeria-raffaele/"
-                  target="_blank"
-                  ><div class="gitBtn btn">
-                    <i class="fa fa-github"></i> Kod strony
-                  </div></a
-                >
-              </div>
-            </div>
-            <div class="description">
-              Strona poświęcona włoskiej pizzeri, zawierająca dostępne menu oraz
-              informacje potrzebne do złożenia zamówienia.
-
-              <h4>Charakterystyka:</h4>
-              <ul>
-                <li>
-                  responsywne menu zmieniające układ (np. rozwijane na
-                  telefonie)
-                </li>
-                <li>
-                  podstrony z informacjami o pizzerii ładowane dynamicznie
-                </li>
-                <li>karta dań z możliwością zwijania wybranych kategorii</li>
-              </ul>
-
-              <h4>Technologie:</h4>
-              <ul>
-                <li>HTML i CSS (flex-box, grid, media queries)</li>
-                <li>JavaScript</li>
-                <li>AJAX (XMLHttpRequest)</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="project">
-          <h3>netFilmoteka</h3>
-          <div class="flex">
-            <div class="interactive">
-              <div>
-                <a href="https://gotowy.github.io/netfilmoteka/" target="_blank"
-                  ><img src="img/2.gif" alt="projekt2"
-                /></a>
-              </div>
-              <div class="buttons">
-                <a href="https://gotowy.github.io/netfilmoteka/" target="_blank"
-                  ><div class="pageBtn btn">Zobacz stronę</div></a
-                >
-                <a
-                  href="https://github.com/gotowy/netfilmoteka/"
-                  target="_blank"
-                  ><div class="gitBtn btn">
-                    <i class="fa fa-github"></i> Kod strony
-                  </div></a
-                >
-              </div>
-            </div>
-            <div class="description">
-              Portal filmowy umożliwiający przeglądanie, zapoznawanie się z
-              fabułą czy porównywanie ocen filmów, znajdujących się w bazie
-              danych TMDb.
-
-              <h4>Charakterystyka:</h4>
-              <ul>
-                <li>wyszukiwanie filmów po tytule (w różnych językach)</li>
-                <li>wyszukiwanie filmów z danego gatunku</li>
-                <li>
-                  sortowanie filmów po wybranym kryterium
-                </li>
-                <li>możliwość sprawdzenia szczegółów filmu</li>
-              </ul>
-
-              <h4>Technologie:</h4>
-              <ul>
-                <li>HTML i CSS (flex-box, grid, media queries)</li>
-                <li>JavaScript</li>
-                <li>React (React-Router-DOM)</li>
-                <li>Redux (Thunk)</li>
-                <li>Axios</li>
-                <li>
+            <div class="flex">
+              <div class="interactive">
+                <div>
                   <a
-                    href="https://developers.themoviedb.org/3/getting-started/introduction"
+                    href="https://gotowy.github.io/pizzeria-raffaele/"
                     target="_blank"
-                    >TMDb API</a
+                    ><img src="img/1.gif" alt="projekt1"
+                  /></a>
+                </div>
+                <div class="buttons">
+                  <a
+                    href="https://gotowy.github.io/pizzeria-raffaele/"
+                    target="_blank"
+                    ><div class="pageBtn btn">Zobacz stronę</div></a
                   >
-                </li>
-              </ul>
+                  <a
+                    href="https://github.com/gotowy/pizzeria-raffaele/"
+                    target="_blank"
+                    ><div class="gitBtn btn">
+                      <i class="fa fa-github"></i> Kod strony
+                    </div></a
+                  >
+                </div>
+              </div>
+              <div class="description">
+                Strona poświęcona włoskiej pizzeri, zawierająca dostępne menu
+                oraz informacje potrzebne do złożenia zamówienia.
+
+                <h4>Charakterystyka:</h4>
+                <ul>
+                  <li>
+                    responsywne menu zmieniające układ (np. rozwijane na
+                    telefonie)
+                  </li>
+                  <li>
+                    podstrony z informacjami o pizzerii ładowane dynamicznie
+                  </li>
+                  <li>karta dań z możliwością zwijania wybranych kategorii</li>
+                </ul>
+
+                <h4>Technologie:</h4>
+                <ul>
+                  <li>HTML i CSS (flex-box, grid, media queries)</li>
+                  <li>JavaScript</li>
+                  <li>AJAX (XMLHttpRequest)</li>
+                </ul>
+              </div>
             </div>
+          </article>
+          <article class="project">
+            <h3>netFilmoteka</h3>
+            <div class="flex">
+              <div class="interactive">
+                <div>
+                  <a
+                    href="https://gotowy.github.io/netfilmoteka/"
+                    target="_blank"
+                    ><img src="img/2.gif" alt="projekt2"
+                  /></a>
+                </div>
+                <div class="buttons">
+                  <a
+                    href="https://gotowy.github.io/netfilmoteka/"
+                    target="_blank"
+                    ><div class="pageBtn btn">Zobacz stronę</div></a
+                  >
+                  <a
+                    href="https://github.com/gotowy/netfilmoteka/"
+                    target="_blank"
+                    ><div class="gitBtn btn">
+                      <i class="fa fa-github"></i> Kod strony
+                    </div></a
+                  >
+                </div>
+              </div>
+              <div class="description">
+                Portal filmowy umożliwiający przeglądanie, zapoznawanie się z
+                fabułą czy porównywanie ocen filmów, znajdujących się w bazie
+                danych TMDb.
+
+                <h4>Charakterystyka:</h4>
+                <ul>
+                  <li>wyszukiwanie filmów po tytule (w różnych językach)</li>
+                  <li>wyszukiwanie filmów z danego gatunku</li>
+                  <li>
+                    sortowanie filmów po wybranym kryterium
+                  </li>
+                  <li>możliwość sprawdzenia szczegółów filmu</li>
+                </ul>
+
+                <h4>Technologie:</h4>
+                <ul>
+                  <li>HTML i CSS (flex-box, grid, media queries)</li>
+                  <li>JavaScript</li>
+                  <li>React (React-Router-DOM)</li>
+                  <li>Redux (Thunk)</li>
+                  <li>Axios</li>
+                  <li>
+                    <a
+                      href="https://developers.themoviedb.org/3/getting-started/introduction"
+                      target="_blank"
+                      >TMDb API</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </section>
+        <section id="contact" class="section">
+          <h2>Zapraszam do współpracy</h2>
+          <div class="details">
+            <div><i class="fa fa-envelope"></i></div>
+            adam.rybak@hotmail.com
+            <div><i class="fa fa-phone"></i></div>
+            +48 799 155 328
+            <div><i class="fa fa-github"></i></div>
+            <a href="https://github.com/gotowy" target="_blank"
+              >https://github.com/gotowy</a
+            >
           </div>
-        </div>
-      </div>
-      <div id="contact" class="section">
-        <h2>Zapraszam do współpracy</h2>
-        <div class="details">
-          <div><i class="fa fa-envelope"></i></div>
-          adam.rybak@hotmail.com
-          <div><i class="fa fa-phone"></i></div>
-          +48 799 155 328
-          <div><i class="fa fa-github"></i></div>
-          <a href="https://github.com/gotowy" target="_blank"
-            >https://github.com/gotowy</a
-          >
-        </div>
-      </div>
+        </section>
+      </main>
       <footer>
         <div>
           &copy ADAM RYBAK 2020<br />
