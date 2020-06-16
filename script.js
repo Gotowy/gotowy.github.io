@@ -1,3 +1,4 @@
+/*THE SAME URL FOR EVERY NAV LINK*/
 const url = (id) => {
   document.querySelector(id).scrollIntoView({
     block: "start",
