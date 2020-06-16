@@ -86,10 +86,10 @@ nav {
 .home,
 .navBtn {
   color: #fff;
+  text-align: center;
   font-size: 24px;
   padding: 10px;
   border-radius: 13px;
-  text-align: center;
   cursor: pointer;
 }
 
