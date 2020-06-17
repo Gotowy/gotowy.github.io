@@ -18,13 +18,13 @@ const bgCallback = (entries) => {
     if (!entry.isIntersecting) {
       document.querySelector("nav").classList.add("scrolled");
       document
-        .querySelectorAll("nav a")
-        .forEach((a) => a.classList.add("color"));
+        .querySelectorAll(".navBtn, .home")
+        .forEach((div) => div.classList.add("color"));
     } else {
       document.querySelector("nav").classList.remove("scrolled");
       document
-        .querySelectorAll("nav a")
-        .forEach((a) => a.classList.remove("color"));
+        .querySelectorAll(".navBtn, .home")
+        .forEach((div) => div.classList.remove("color"));
     }
   });
 };
