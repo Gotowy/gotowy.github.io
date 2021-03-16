@@ -18,7 +18,7 @@ body {
 
 section {
   min-height: calc(100vh - 80px);
-  padding: 40px;
+  padding: 100px 40px 40px 40px;
 }
 
 .background {
@@ -31,6 +31,8 @@ section {
   background-color: #111;
   background-blend-mode: overlay;
   color: transparent;
+  text-align: center;
+  padding-top: 40px;
 }
 
 .bgTransform {
@@ -69,6 +71,7 @@ nav {
   left: 0;
   right: 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 7px;
   background-color: #7779;
@@ -78,7 +81,7 @@ nav {
 }
 
 .navmenu {
-  width: 40%;
+  min-width: 40%;
   display: flex;
   justify-content: space-around;
 }
@@ -107,7 +110,9 @@ nav {
 }
 
 .navBtn {
-  width: calc(33% - 25px);
+  /*width: calc(33% - 25px);*/
+  width: 150px;
+  margin: 0 3px;
   transition: background-color 0.2s ease-in-out;
 }
 
@@ -208,7 +213,8 @@ ul {
 .flex {
   margin: 0 auto;
   display: flex;
-  text-align: justify;
+  flex-wrap: wrap;
+
   justify-content: space-evenly;
 }
 
@@ -217,9 +223,17 @@ ul {
   padding-left: 4vw;
 }
 
+#about li {
+  width: 140px;
+}
+
+.interactive {
+  margin-bottom: 30px;
+}
+
 .description {
-  margin-left: 50px;
-  width: 600px;
+  margin: 0 50px;
+  max-width: 600px;
 }
 
 .description li {
@@ -279,9 +293,9 @@ footer a:hover {
 }
 
 #contact .details {
-  height: 100%;
-  flex: 1;
+  max-height: 365px;
   display: flex;
+  flex: 1;
   flex-direction: column;
   justify-content: space-around;
   text-align: center;
@@ -305,4 +319,19 @@ footer {
 
 footer div {
   margin: auto auto;
+}
+
+/* --MEDIA QUERIES-- */
+/* MOBILE STYLES */
+@media screen and (max-width: 768px) {
+  nav {
+    justify-content: center;
+  }
+}
+
+/* TABLET STYLES */
+@media screen and (max-width: 1355px) {
+  #projects {
+    background: #222;
+  }
 }

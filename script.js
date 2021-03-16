@@ -96,11 +96,9 @@ const titleCallback = (entries) => {
     if (entry.isIntersecting) {
       document.querySelector(".background").classList.add("bgTransform");
       document.querySelector(".title2").classList.add("visible");
-      //document.querySelector(".background span").classList.add("");
     } else {
       document.querySelector(".background").classList.remove("bgTransform");
       document.querySelector(".title2").classList.remove("visible");
-      //document.querySelector(".background span").classList.remove("transform2");
     }
   });
 };

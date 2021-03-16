@@ -27,7 +27,7 @@
       <nav>
         <div class="home" onclick="url('#start')">Adam Rybak - Portfolio</div>
         <div class="navmenu">
-          <div class="navBtn" onclick="url('#about')">O mnie</div>
+          <div class="navBtn" onclick="url('#about')">O&nbsp;mnie</div>
           <div class="navBtn" onclick="url('#projects')">Projekty</div>
           <div class="navBtn" onclick="url('#contact')">Kontakt</div>
         </div>
@@ -46,14 +46,13 @@
               <h2>Kim jestem</h2>
               <br />Jestem absolwentem studiów ekonomicznych, który postanowił
               poszerzyć swoje kompetencje zawodowe, zgłębiając zupełnie nową
-              dziedzinę wiedzy. Naukę programowania zacząłem na własną rękę, pod
+              dziedzinę. Naukę programowania rozpocząłem na własną rękę, pod
               koniec 2018 roku. Jestem obecnie skupiony na poznawaniu
               technologii związanych z pisaniem aplikacji webowych i
-              front-endem. Kolejnymi, większymi technologiami, których naukę
-              planuję rozpocząć są: Firebase/AWS oraz PWA/React Native. Pracując
-              lubię podejmować zróżnicowane zadania, z łatwością przyswajam nową
-              wiedzę i umiejętności, posługuję się swobodnie językiem angielskim
-              oraz dobrze odnajduję się w pracy z innymi ludźmi.
+              front-endem. Pracując lubię podejmować zróżnicowane zadania, z
+              łatwością przyswajam nowe umiejętności i wiedzę, posługuję się
+              swobodnie językiem angielskim oraz dobrze odnajduję się w pracy z
+              innymi ludźmi.
             </article>
             <br /><br /><br />
 
@@ -70,18 +69,78 @@
                 </ul>
                 <ul>
                   <li>VS Code</li>
-                  <li>Powershell</li>
+                  <li>PowerShell</li>
                   <li>Git / Github</li>
-                  <li>Chrome DevTools</li>
+                  <li>Chrome&nbsp;DevTools</li>
                 </ul>
               </div>
             </article>
           </div>
         </section>
+
         <section id="projects" class="section">
           <div class="stripe stripe1"></div>
           <div class="stripe stripe2"></div>
           <h2>Moje projekty</h2>
+
+          <article class="project">
+            <h3>netFilmoteka</h3>
+            <div class="flex">
+              <div class="interactive">
+                <div>
+                  <a
+                    href="https://gotowy.github.io/netfilmoteka/"
+                    target="_blank"
+                    ><img src="img/2.gif" alt="projekt2"
+                  /></a>
+                </div>
+                <div class="buttons">
+                  <a
+                    href="https://gotowy.github.io/netfilmoteka/"
+                    target="_blank"
+                    ><div class="pageBtn btn">Zobacz stronę</div></a
+                  >
+                  <a
+                    href="https://github.com/gotowy/netfilmoteka/"
+                    target="_blank"
+                    ><div class="gitBtn btn">
+                      <i class="fa fa-github"></i> Kod strony
+                    </div></a
+                  >
+                </div>
+              </div>
+              <div class="description">
+                Portal filmowy umożliwiający przeglądanie, zapoznawanie się z
+                fabułą czy porównywanie ocen filmów, znajdujących się w bazie
+                filmowej TMDb.
+
+                <h4>Charakterystyka:</h4>
+                <ul>
+                  <li>wyszukiwanie filmów po tytule (w różnych językach)</li>
+                  <li>wyszukiwanie filmów z danego gatunku</li>
+                  <li>sortowanie filmów po wybranym kryterium</li>
+                  <li>możliwość sprawdzenia szczegółów filmu</li>
+                </ul>
+
+                <h4>Technologie:</h4>
+                <ul>
+                  <li>HTML i CSS (flex-box, grid, media queries)</li>
+                  <li>JavaScript</li>
+                  <li>React (React-Router-DOM)</li>
+                  <li>Redux (Thunk)</li>
+                  <li>Axios</li>
+                  <li>
+                    <a
+                      href="https://developers.themoviedb.org/3/getting-started/introduction"
+                      target="_blank"
+                      >TMDb API</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
           <article class="project">
             <h3>Pizzeria Raffaele</h3>
 
@@ -115,13 +174,7 @@
 
                 <h4>Charakterystyka:</h4>
                 <ul>
-                  <li>
-                    responsywne menu zmieniające układ (np. rozwijane na
-                    telefonie)
-                  </li>
-                  <li>
-                    podstrony z informacjami o pizzerii ładowane dynamicznie
-                  </li>
+                  <li>responsywne menu zmieniające układ</li>
                   <li>karta dań z możliwością zwijania wybranych kategorii</li>
                 </ul>
 
@@ -129,66 +182,8 @@
                 <ul>
                   <li>HTML i CSS (flex-box, grid, media queries)</li>
                   <li>JavaScript</li>
-                  <li>AJAX (XMLHttpRequest)</li>
-                </ul>
-              </div>
-            </div>
-          </article>
-          <article class="project">
-            <h3>netFilmoteka</h3>
-            <div class="flex">
-              <div class="interactive">
-                <div>
-                  <a
-                    href="https://gotowy.github.io/netfilmoteka/"
-                    target="_blank"
-                    ><img src="img/2.gif" alt="projekt2"
-                  /></a>
-                </div>
-                <div class="buttons">
-                  <a
-                    href="https://gotowy.github.io/netfilmoteka/"
-                    target="_blank"
-                    ><div class="pageBtn btn">Zobacz stronę</div></a
-                  >
-                  <a
-                    href="https://github.com/gotowy/netfilmoteka/"
-                    target="_blank"
-                    ><div class="gitBtn btn">
-                      <i class="fa fa-github"></i> Kod strony
-                    </div></a
-                  >
-                </div>
-              </div>
-              <div class="description">
-                Portal filmowy umożliwiający przeglądanie, zapoznawanie się z
-                fabułą czy porównywanie ocen filmów, znajdujących się w bazie
-                danych TMDb.
-
-                <h4>Charakterystyka:</h4>
-                <ul>
-                  <li>wyszukiwanie filmów po tytule (w różnych językach)</li>
-                  <li>wyszukiwanie filmów z danego gatunku</li>
-                  <li>
-                    sortowanie filmów po wybranym kryterium
-                  </li>
-                  <li>możliwość sprawdzenia szczegółów filmu</li>
-                </ul>
-
-                <h4>Technologie:</h4>
-                <ul>
-                  <li>HTML i CSS (flex-box, grid, media queries)</li>
-                  <li>JavaScript</li>
-                  <li>React (React-Router-DOM)</li>
-                  <li>Redux (Thunk)</li>
-                  <li>Axios</li>
-                  <li>
-                    <a
-                      href="https://developers.themoviedb.org/3/getting-started/introduction"
-                      target="_blank"
-                      >TMDb API</a
-                    >
-                  </li>
+                  <li>React (Hooks, React-Router-DOM)</li>
+                  <li>Styled-Components</li>
                 </ul>
               </div>
             </div>
@@ -204,6 +199,10 @@
             <div><i class="fa fa-github"></i></div>
             <a href="https://github.com/gotowy" target="_blank"
               >https://github.com/gotowy</a
+            >
+            <div><i class="fa fa-linkedin-square"></i></div>
+            <a href="https://linkedin.com/in/adam-rybak-dev/" target="_blank"
+              >https://linkedin.com/in/adam-rybak-dev/</a
             >
           </div>
         </section>
